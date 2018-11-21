@@ -1,0 +1,1667 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="申恒恒">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="机器学习与大数据研究生">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?48ac64a24eebc5cb273da3d6a926069b";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+  
+  
+
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="申恒恒的博客">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="申恒恒的博客">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@ShenHengheng">
+  <meta property="twitter:creator" content="@ShenHengheng">
+  
+  <meta property="og:site_name" content="申恒恒的博客">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="申恒恒的博客">
+  <meta property="og:description" content="机器学习与大数据研究生">
+  
+  
+    
+  <meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="og:updated_time" content="2017-10-15T00:00:00&#43;08:00">
+  
+
+  
+
+  
+
+  <title>申恒恒的博客</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">申恒恒的博客</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about" data-target="#about">
+            
+            <span>首页</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected" data-target="#publications_selected">
+            
+            <span>学习笔记</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts" data-target="#posts">
+            
+            <span>技术博客</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects" data-target="#projects">
+            
+            <span>开源项目</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/learning/" data-target="/learning/">
+            
+            <span>教程分享</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact" data-target="#contact">
+            
+            <span>和我联系</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<span id="homepage" style="display: none"></span>
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+
+
+
+
+
+
+  
+
+
+<section id="hero" class="hero-overlay" style="
+
+background-color: #666;
+
+
+background-image:
+linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+url('img/headers/bubbles-wide.jpg')
+
+;">
+
+  <div class="container">
+
+    <h1 class="hero-title" itemprop="headline">
+      Self-Driving Car
+    </h1>
+
+    
+    <p class="hero-lead">Self Driving Car Based On Deep Learning and Raspberry Pi.
+<!-- <div style="margin-top: -0.5rem;">
+  <a id="car-release" href="https://github.com/rh01/raspi-driving-car/archive/v1.0.tar.gz" data-repo="gcushen/hugo-academic">
+  Latest release 
+  </a>
+</div> -->
+<div class="mt-3">
+  <a class="github-button" href="https://github.com/rh01/raspi-driving-car" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a>
+</div>
+<script async defer src="https://buttons.github.io/buttons.js"></script></p>
+    
+
+    
+    <p><a href="https://github.com/rh01/raspi-driving-car/archive/v1.0.tar.gz" class="btn btn-outline-light btn-lg"><i class="fas fa-download"></i> Download Now</a></p>
+    
+
+  </div>
+
+</section>
+
+  
+
+  
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      <img class="portrait" src="/img/shenheng.jpeg" itemprop="image" alt="Avatar">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">申恒恒</h2>
+        <h3 itemprop="jobTitle">机器学习与大数据研究生</h3>
+
+        
+        
+
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="http://www.ict.ac.cn/" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">中国科学院计算技术研究所</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <link itemprop="url" href="/">
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+        <li>
+          <a itemprop="sameAs" href="mailto:1048157315@qq.com" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://twitter.com/ShenHengheng" target="_blank" rel="noopener">
+            <i class="fab fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://github.com/rh01" target="_blank" rel="noopener">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.youtube.com/channel/UCTOuJy4b9E89zCwffX-qC3A" target="_blank" rel="noopener">
+            <i class="fab fa-youtube big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8" itemprop="description">
+
+    
+
+<h1 id="简介">简介</h1>
+
+<p>申恒恒，学生，精通机器学习算法和深度学习算法，专注于大数据与机器学习方向，目前在大数据研究院负责工业互联网的研发工作。曾对基础架构，大数据、云计算平台的研发和运维有过深入研究和实践。</p>
+
+<p>目前在中科院计算所读研，在工业互联网团队从事工业互联网（软件+硬件+平台）开发。</p>
+
+<p>个人理念：少说废话，多办实事。</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>大数据/Big Data</li>
+          
+          <li>机器学习/Machine Learning</li>
+          
+          <li>深度学习/Deep Learning</li>
+          
+          <li>物联网/Internet of Things</li>
+          
+          <li>云计算/Cloud Computing</li>
+          
+          <li>微服务/Micro Service</li>
+          
+          <li>服务网格/Service Mesh</li>
+          
+          <li>云原生/Cloud Native</li>
+          
+          <li>敏捷/DevOps</li>
+          
+        </ul>
+      </div>
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="experience" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>个人经历</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                July 2018 –
+                
+                  Present
+                
+                
+              </div>
+              <div class="text-right">江西上饶</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">实习生</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://ibdsr.cn/" target="_blank" rel="noopener">上饶市中科院云计算中心大数据研究院</a></h4>
+            <div class="card-text">负责:</p>
+
+<ul>
+<li>工业互联网/物联网的研发</li>
+<li>工业大数据平台的构建与部署
+<br /></li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                October 2014 –
+                
+                  March 2015
+                
+                
+              </div>
+              <div class="text-right">成都</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">实习生</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.shiyanlou.com/" target="_blank" rel="noopener">实验楼</a></h4>
+            <div class="card-text">市场推广大使</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>特别推荐</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+    
+
+    
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+  
+  
+  
+  <div>
+    <a href="/publication/clothing-search/">
+      <img src="/publication/clothing-search/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_918x517_fill_q90_box_smart1.jpg" class="article-banner" itemprop="image" alt="">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/clothing-search/" itemprop="url">Mobile visual clothing search</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    A mobile visual clothing search system is presented whereby a smart phone user can either choose a social networking image or capture a new photo of a person wearing clothing of interest and search for similar clothing in a large cloud-based ecommerce database. The phone&rsquo;s GPS location is used to re-rank results by retail store location, to inform the user of local stores where similar clothing items can be tried on.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    GA Cushen, MS Nixon
+    
+  </div>
+
+  <div class="pub-publication">
+    
+    In <em>ICMEW</em>,
+    
+    2013
+  </div>
+
+  <div class="btn-links">
+    
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/clothing-search/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/internal-project/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Source Document
+</a>
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://example.org" target="_blank" rel="noopener">
+    
+    Custom Link
+  </a>
+
+
+  </div>
+
+</div>
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>最新动态</h1>
+    <p>演讲/文章/分享</p>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+      
+        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/publication/person-re-id/" itemprop="url">A Person Re-Identification System For Mobile Devices</a>
+    </h3>
+
+    
+    
+      
+    
+    
+    <div class="article-style" itemprop="articleBody">
+      Person re-identification is a critical security task for recognizing a person across spatially disjoint sensors. Previous work can be …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+      <div itemprop="author">
+        GA Cushen</div>
+    </div>
+
+    <div class="btn-links">
+      
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/example-slides/" target="_blank">
+    Slides
+  </a>
+  
+
+
+
+
+
+
+    </div>
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/person-re-id/">
+      <img src="/publication/person-re-id/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_150x0_resize_q75_box.jpg" itemprop="image">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/publication/clothing-search/" itemprop="url">Mobile visual clothing search</a>
+    </h3>
+
+    
+    
+      
+    
+    
+    <div class="article-style" itemprop="articleBody">
+      A mobile visual clothing search system is presented whereby a smart phone user can either choose a social networking image or capture a …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+      <div itemprop="author">
+        GA Cushen, MS Nixon</div>
+    </div>
+
+    <div class="btn-links">
+      
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/clothing-search/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/internal-project/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/clothing-search/#" target="_blank" rel="noopener">
+  Source Document
+</a>
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://example.org" target="_blank" rel="noopener">
+    
+    Custom Link
+  </a>
+
+
+    </div>
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/clothing-search/">
+      <img src="/publication/clothing-search/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_150x0_resize_q75_box.jpg" itemprop="image">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="posts" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+
+    <h1>技术博客</h1>
+    
+    
+
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+
+      
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+
+      
+      
+        
+          
+
+<div class="media stream-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="headline">
+      <a href="/post/getting-started/" itemprop="url">Academic: the website designer for Hugo</a>
+    </h3>
+
+    
+    
+      
+    
+    
+    <div class="article-style" itemprop="articleBody">
+      Create a beautifully simple website or blog in under 10 minutes.
+    </div>
+    
+
+    <div class="stream-meta">
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="申恒恒">
+  </span>
+  
+
+  <span class="article-date">
+    
+        Last updated on
+    
+    <meta content="2016-04-20 00:00:00 &#43;0800 CST" itemprop="datePublished">
+    <time datetime="2018-01-13 00:00:00 &#43;0800 CST" itemprop="dateModified">
+      2018-01-13
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="申恒恒">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/getting-started/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+    </div>
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/post/getting-started/">
+      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q75_box.jpg" itemprop="image">
+    </a>
+    
+  </div>
+</div>
+
+        
+      
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="projects" class="home-section">
+    <div class="container">
+      
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+
+    <h1>开源项目</h1>
+    
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+
+
+    
+
+    
+
+      
+
+      
+      
+      
+      
+        
+      
+
+      <span class="d-none default-project-filter">*</span>
+
+      
+      
+      <div class="project-toolbar">
+        <div class="project-filters">
+          <div class="btn-toolbar">
+            <div class="btn-group flex-wrap">
+              
+                
+                
+                
+                  
+                
+                <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep Learning</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Machine-Learning" class="btn btn-primary btn-lg">Machine Learning</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-IoT" class="btn btn-primary btn-lg">IoT</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">Other</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+
+    <div class="row isotope projects-container js-layout-masonry ">
+      
+        
+        
+        
+          
+          
+        
+        
+          
+
+
+
+
+
+
+
+
+<div class="col-12 col-md-6 col-lg-4 project-item isotope-item js-id-Deep-Learning">
+  <div class="card">
+    
+    
+    <a href="https://youtu.be/poPoz264rpo" target="_blank" rel="noopener" class="card-image hover-overlay">
+      <img src="/project/internal-project/featured_hu31e7150549321fc95f5928b1b30f4242_809396_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="https://youtu.be/poPoz264rpo" target="_blank" rel="noopener">自动驾驶小车</a></h4>
+      <div class="card-desription">
+        <p>An example of the self driving car based on deep learning.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+        
+        
+          
+          
+        
+        
+          
+
+
+
+
+
+
+
+
+<div class="col-12 col-md-6 col-lg-4 project-item isotope-item js-id-Demo">
+  <div class="card">
+    
+    
+    <a href="http://example.org" target="_blank" rel="noopener" class="card-image hover-overlay">
+      <img src="/project/external-project/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_329522_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="http://example.org" target="_blank" rel="noopener">External Project</a></h4>
+      <div class="card-desription">
+        <p>An example of linking directly to an external project website using <code>external_link</code>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+      
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="tags" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Tags</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+      
+
+      
+      
+      
+      
+      
+
+      <div id="tag-cloud">
+        
+          
+          
+          
+          <a href="/tags/academic/" style="font-size:0.8rem">Academic</a>
+        
+          
+          
+          
+          <a href="/tags/deep-learning/" style="font-size:0.8rem">Deep Learning</a>
+        
+          
+          
+          
+          <a href="/tags/demo/" style="font-size:0.8rem">Demo</a>
+        
+      </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="contact" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>和我联系</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    <p><!--  -->
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GEbowcucx4hvPsG8GwvzCBUIDQzmMmOH"></script>
+<div id="allmap">
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(117.9431460000, 28.4575310000);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);              // 将标注添加到地图中
+    map.centerAndZoom(point, 15);
+    var opts = {
+      width : 50,     // 信息窗口宽度
+      height: 50,     // 信息窗口高度
+    }
+    var infoWindow = new BMap.InfoWindow("地址：上饶市信州区广信大厦A座3楼", opts);  // 创建信息窗口对象 
+    marker.addEventListener("click", function(){          
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    });
+</script>
+
+<p></div>
+ <!-- baiduMap --></p>
+
+<style type="text/css">
+    #allmap {width: 100%;height: 100%;overflow: hidden;margin:0px 20px 30px 0px;font-family:"微软雅黑";}
+</style>
+</p>
+
+    
+
+    <ul class="fa-ul" itemscope>
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email"><a href="mailto:1048157315@qq.com">1048157315@qq.com</a></span>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">江西省上饶市信州区广信大厦A座3楼</span>
+      </li>
+      
+
+      
+
+    </ul>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    shenhengheng.xyz &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//ShenHengheng.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
+    
+
+  </body>
+</html>
+
+
